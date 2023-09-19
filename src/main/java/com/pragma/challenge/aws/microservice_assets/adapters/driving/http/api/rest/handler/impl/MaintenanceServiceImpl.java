@@ -4,7 +4,9 @@ import com.pragma.challenge.aws.microservice_assets.adapters.driving.http.api.re
 import com.pragma.challenge.aws.microservice_assets.adapters.driving.http.api.rest.handler.MaintenanceService;
 import com.pragma.challenge.aws.microservice_assets.adapters.driving.http.api.rest.mapper.MaintenanceModelMapper;
 import com.pragma.challenge.aws.microservice_assets.domain.ports.spi.MaintenanceApiPort;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MaintenanceServiceImpl implements MaintenanceService {
     private final MaintenanceApiPort maintenanceApiPort;
     private final MaintenanceModelMapper maintenanceModelMapper;

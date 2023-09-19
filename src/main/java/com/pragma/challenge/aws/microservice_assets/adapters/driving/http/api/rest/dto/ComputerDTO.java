@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ComputerDTO extends TechnologyDTO{
-    private Long computerId;
-
     private String processor;
 
     private int ram;

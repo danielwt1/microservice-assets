@@ -9,7 +9,6 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Getter
 public class ErrorDetails {
-
     private String message;
     private LocalDate date;
     private String path;

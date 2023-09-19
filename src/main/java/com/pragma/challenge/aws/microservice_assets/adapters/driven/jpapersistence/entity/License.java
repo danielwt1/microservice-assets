@@ -1,10 +1,13 @@
 package com.pragma.challenge.aws.microservice_assets.adapters.driven.jpapersistence.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 
 
 import java.time.LocalDateTime;
 @Entity
+@PrimaryKeyJoinColumn(name = "abstract_license_assetId")
+
 public class License extends Abstract{
 
     private String provider;

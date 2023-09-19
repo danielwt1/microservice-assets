@@ -2,9 +2,13 @@ package com.pragma.challenge.aws.microservice_assets.adapters.driven.jpapersiste
 
 
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 import java.time.LocalDateTime;
 
 @Entity
+@PrimaryKeyJoinColumn(name = "abstract_assetId")
+
+
 public class Abstract extends Asset{
 
     private String url;

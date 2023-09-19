@@ -9,7 +9,6 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TechnologyDTO extends AssetDTO{
-    private Long idTechNology;
     private String brand;
 
     private String location;

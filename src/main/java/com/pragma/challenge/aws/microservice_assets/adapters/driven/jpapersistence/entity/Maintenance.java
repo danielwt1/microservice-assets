@@ -1,21 +1,24 @@
 package com.pragma.challenge.aws.microservice_assets.adapters.driven.jpapersistence.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 
 import java.time.LocalDateTime;
 @Entity
+@PrimaryKeyJoinColumn(name = "furniture_maintenance_asseId")
+
 public class Maintenance extends Furniture{
 
     private Long typeId;
-    private Long accountableId;
+    private Long accountableMaintenanceId;
 
     public Maintenance() {
     }
 
-    public Maintenance(Long assetid, Long accountableId, Long accountableTypeId, LocalDateTime purchaseDate, String invoiceNumber, String description, String status, String manufacturer, String location, int quantity, String detail, Long typeId, Long accountableId1) {
+    public Maintenance(Long assetid, Long accountableId, Long accountableTypeId, LocalDateTime purchaseDate, String invoiceNumber, String description, String status, String manufacturer, String location, int quantity, String detail, Long typeId, Long accountableMaintenanceId) {
         super(assetid, accountableId, accountableTypeId, purchaseDate, invoiceNumber, description, status, manufacturer, location, quantity, detail);
         this.typeId = typeId;
-        this.accountableId = accountableId1;
+        this.accountableMaintenanceId = accountableMaintenanceId;
     }
 
     public Long getTypeId() {
@@ -26,11 +29,11 @@ public class Maintenance extends Furniture{
         this.typeId = typeId;
     }
 
-    public Long getAccountableId() {
-        return accountableId;
+    public Long getAccountableMaintenanceId() {
+        return accountableMaintenanceId;
     }
 
-    public void setAccountableId(Long accountableId) {
-        this.accountableId = accountableId;
+    public void setAccountableMaintenanceId(Long accountableMaintenanceId) {
+        this.accountableMaintenanceId = accountableMaintenanceId;
     }
 }

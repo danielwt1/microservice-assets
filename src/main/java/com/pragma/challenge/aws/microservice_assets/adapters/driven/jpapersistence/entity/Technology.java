@@ -1,9 +1,12 @@
 package com.pragma.challenge.aws.microservice_assets.adapters.driven.jpapersistence.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 
 import java.time.LocalDateTime;
 @Entity
+@PrimaryKeyJoinColumn(name = "tech_assetId")
+
 public class Technology extends Asset{
 
     private String brand;

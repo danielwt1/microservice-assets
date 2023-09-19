@@ -4,26 +4,30 @@ package com.pragma.challenge.aws.microservice_assets.adapters.driven.jpapersiste
 import java.time.LocalDate;
 public interface AssetResponseProjection {
     Long getAssetId();
-    Long getAccountableId();
-    Long getAccountableTypeId();
-    String getDescription();
     String getInvoiceNumber();
     LocalDate getPurchaseDate();
+    String getDescription();
     String getStatus();
+    Long getAccountableId();
+    Long getAccountableTypeId();
     String getUrl();
     String getHardDrive();
     String getProcessor();
     String getRam();
-    String getDetail();
-    String getLocation();
+    Long getIdFK();
+    String getFurnDetail();
+    String getFurnLocation();
     String getManufacturer();
-    Integer getQuantity();
+    Long getQuantity();
     LocalDate getExpirationDate();
     String getLicenseState();
     String getProvider();
+    Long getAccountableMaintenanceId();
     Long getTypeId();
-    Integer getInches();
+    Long getInches();
     String getBrand();
+    String getTechDetail();
+    String getTechLocation();
     String getWarrantyDetail();
     LocalDate getWarrantyExpirationDate();
 }

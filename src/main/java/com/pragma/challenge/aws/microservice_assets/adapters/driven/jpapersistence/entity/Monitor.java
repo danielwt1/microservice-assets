@@ -2,8 +2,11 @@ package com.pragma.challenge.aws.microservice_assets.adapters.driven.jpapersiste
 
 
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 import java.time.LocalDateTime;
 @Entity
+@PrimaryKeyJoinColumn(name = "tech_monitor_assetId")
+
 public class Monitor extends Technology {
 
     private short inches;

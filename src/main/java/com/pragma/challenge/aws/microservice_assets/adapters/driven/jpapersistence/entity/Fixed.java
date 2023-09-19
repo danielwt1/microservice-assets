@@ -2,8 +2,10 @@ package com.pragma.challenge.aws.microservice_assets.adapters.driven.jpapersiste
 
 
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 import java.time.LocalDateTime;
 @Entity
+@PrimaryKeyJoinColumn(name = "furniture_fixed_assetId")
 public class Fixed extends Furniture{
 
 
